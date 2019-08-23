@@ -21,9 +21,9 @@ cd '.\Program Files\MongoDB\Server\4.2\bin'
 ```
 
 ```bash
-.\mongod.exe -config .\Users\dlafossa\Documents\workspace\mongod\mongod.cfg
+.\mongod.exe -config .\Users\{User}\Documents\workspace\mongod\mongod.cfg
 or
-.\mongod.exe -config C:\Users\dlafossa\Documents\workspace\mongod\mongod.cfg
+.\mongod.exe -config C:\Users\{User}\Documents\workspace\mongod\mongod.cfg
 ```
 
 mongod.cfg
@@ -36,7 +36,7 @@ mongod.cfg
 
 # Where and how to store data.
 storage:
-  dbPath: C:\Users\dlafossa\Documents\workspace\mongod\data\db
+  dbPath: C:\Users\{User}\Documents\workspace\mongod\data\db
   journal:
     enabled: true
 
@@ -44,7 +44,7 @@ storage:
 systemLog:
   destination: file
   logAppend: true
-  path:  C:\Users\dlafossa\Documents\workspace\mongod\data\logs\mongod.log
+  path:  C:\Users\{User}\Documents\workspace\mongod\data\logs\mongod.log
 
 # network interfaces
 net:
